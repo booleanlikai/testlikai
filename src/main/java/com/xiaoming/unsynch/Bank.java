@@ -1,14 +1,19 @@
 package com.xiaoming.unsynch;
 
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Bank {
-    private final double[] account;
+    private  double[] account;
     private Lock banklock = new ReentrantLock();
     private Condition condition;
+
+    public Bank() {
+        System.out.println("xiaoming");
+    }
 
     public Bank(double[] account) {
         this.account = account;
@@ -49,5 +54,14 @@ public class Bank {
 
     public int size() {
         return this.account.length;
+    }
+
+    public synchronized static void  printssss(){
+        System.out.println("进入锁");
+        try {
+            TimeUnit.SECONDS.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

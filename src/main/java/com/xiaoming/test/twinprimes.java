@@ -5,15 +5,18 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class twinprimes {
     private static volatile Map<String, String> map = new ConcurrentHashMap<>();
 
-
     public static void main(String[] args) {
+
+
         long starttime = new Date().getTime();
         ForkJoinPool forkJoinPool = new ForkJoinPool();
-        comsuner comsuner = new comsuner(3, 9999999);
+        comsuner comsuner = new comsuner(3, 99999999);
         forkJoinPool.invoke(comsuner);
         System.out.println("sssssssssssssssss:" + comsuner.join());
         long endtime = new Date().getTime();
@@ -71,7 +74,7 @@ public class twinprimes {
 
         int start;
         int end;
-        public static final int THRSHOLD = 500;
+        public static final int THRSHOLD = 750;
 
         public comsuner(int start, int end) {
             this.start = start;
@@ -87,7 +90,7 @@ public class twinprimes {
                 comsuner comsuner1 = new comsuner(start, mid + 1);
                 comsuner comsuner2 = new comsuner(mid - 1, end);
                 comsuner1.fork();
-                long rightlong = (long) comsuner2.compute();
+                Integer rightlong = (Integer) comsuner2.compute();
                 return (Integer) comsuner1.join() + rightlong;
             } else {
                 return twinprimes.sumti(start, end);
