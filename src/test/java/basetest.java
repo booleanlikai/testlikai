@@ -11,9 +11,7 @@ import org.junit.Test;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 
 //@ContextConfiguration(locations = {"classpath:spring.xml","classpath:spring-mybatis.xml"})
@@ -38,13 +36,13 @@ public class basetest {
             studentEntity.setSex(1);
             lists.add(studentEntity);
         }
-        List<CourseEntity> list=new ArrayList<CourseEntity>();
-        CourseEntity courseEntity=new CourseEntity();
+        List<CourseEntity> list = new ArrayList<CourseEntity>();
+        CourseEntity courseEntity = new CourseEntity();
         courseEntity.setName("数学课");
         courseEntity.setStudents(lists);
-        courseEntity.setMathTeacher(new TeacherEntity("11","22"));
+        courseEntity.setMathTeacher(new TeacherEntity("11", "22"));
         list.add(courseEntity);
-        Workbook workbook = ExcelExportUtil.exportExcel(new ExportParams("2412312",  "测试",ExcelType.XSSF),
+        Workbook workbook = ExcelExportUtil.exportExcel(new ExportParams("2412312", "测试", ExcelType.XSSF),
                 CourseEntity.class, list);
 //        FileOutputStream fos = new FileOutputStream("E:/Test.xlsx");
 //
@@ -59,7 +57,7 @@ public class basetest {
     }
 
     @Test
-    public void testeee(){
+    public void testeee() {
         //第一步创建workbook
         HSSFWorkbook wb = new HSSFWorkbook();
 
@@ -78,7 +76,6 @@ public class basetest {
         cell.setCellStyle(style);
 
 
-
         cell = row.createCell(1);         //第二个单元格
         cell.setCellValue("年龄");
         cell.setCellStyle(style);
@@ -88,9 +85,9 @@ public class basetest {
 
         for (int i = 0; i < 5; i++) {
             //创建行
-            row = sheet.createRow(i+1);
+            row = sheet.createRow(i + 1);
             //创建单元格并且添加数据
-            row.createCell(0).setCellValue("aa"+i);
+            row.createCell(0).setCellValue("aa" + i);
             row.createCell(1).setCellValue(i);
 
         }
@@ -109,17 +106,33 @@ public class basetest {
 
     @Test
     public void testclone() throws CloneNotSupportedException {
-        classA a=new classA();
+        classA a = new classA();
         a.setAge("sss");
         a.setCode("ssss");
         a.setName("ssss");
-        classB b=new classB();
+        classB b = new classB();
         b.setAgeb("sss");
         b.setCodeb("sss");
         b.setNameb("sss");
         a.setClassB(b);
 
-        classA aa= (classA) a.clone();
+        classA aa = (classA) a.clone();
+    }
+
+
+    @Test
+    public void testdeepToString() {
+        classA a = new classA();
+        a.setAge("age");
+        a.setCode("code");
+        a.setName("name");
+        classB b = new classB();
+        b.setAgeb("ageb");
+        b.setCodeb("codeb");
+        b.setNameb("nameb");
+        String aa = Arrays.deepToString(new Object[]{a,b});
+        System.out.println(aa);
+
     }
 
 
