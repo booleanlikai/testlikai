@@ -12,6 +12,10 @@ import org.junit.Test;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.*;
+
+import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.*;
 
 
 //@ContextConfiguration(locations = {"classpath:spring.xml","classpath:spring-mybatis.xml"})
@@ -135,5 +139,77 @@ public class basetest {
 
     }
 
+    static ExecutorService executor = Executors.newFixedThreadPool(3, new ThreadFactory() {
+        int count = 1;
+        @Override
+        public Thread newThread(Runnable runnable) {
+            return new Thread(runnable, "custom-executor-" + count++);
+        }
+    });
+
+    @Test
+    public void testss() throws ExecutionException, InterruptedException {
+
+
+//        CompletableFuture<String> cf = CompletableFuture.completedFuture("message").thenApply(s -> {
+//            assertFalse(Thread.currentThread().isDaemon());
+//            return s.toUpperCase();
+//        });
+//        assertEquals("MESSAGE", cf.getNow(null));
+
+//        CompletableFuture<String> cf = CompletableFuture.completedFuture("message").thenApplyAsync(s -> {
+////            (Thread.currentThread().isDaemon());
+//            System.out.println(Thread.currentThread().isDaemon());
+//            return s.toUpperCase();
+//        });
+////        assertEquals("null", cf.getNow(null));
+//        System.out.println(cf.getNow(null));
+//        System.out.println(cf.join());
+
+//        CompletableFuture<String> cf = CompletableFuture.completedFuture("message").thenApplyAsync(s -> {
+//            assertTrue(Thread.currentThread().getName().startsWith("custom-executor-"));
+//            assertFalse(Thread.currentThread().isDaemon());
+//            return s.toUpperCase();
+//        }, executor);
+//        assertNull(cf.getNow(null));
+//        assertEquals("MESSAGE", cf.join());
+
+//        StringBuilder result = new StringBuilder();
+//        CompletableFuture<Void> cf = CompletableFuture.completedFuture("thenAcceptAsync message")
+//                .thenAcceptAsync(s -> {
+//                    System.out.println(result);
+//                    result.append(s);
+//                });
+//        cf.join();
+//        System.out.println(result);
+//        assertTrue("Result was empty", result.length() > 0);
+
+
+        CompletableFuture<String> cf = CompletableFuture.completedFuture("message").thenApplyAsync((n)->{
+            try {
+                throw new Exception("ceshi");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return n.toUpperCase();
+        });
+        CompletableFuture<String> exceptionHandler = cf.handle((s, th) -> {
+            System.out.println(s);
+            System.out.println(th);
+            return (th != null) ? "message upon cancel" : ""; });
+        cf.completeExceptionally(new RuntimeException("completed exceptionally"));
+//        assertTrue("Was not completed exceptionally", cf.isCompletedExceptionally());
+        try {
+            cf.join();
+            System.out.println(cf.get());
+//            fail("Should have thrown an exception");
+        } catch(CompletionException ex) { // just for testing
+            ex.printStackTrace();
+            assertEquals("completed exceptionally", ex.getCause().getMessage());
+        }
+        exceptionHandler.join();
+        System.out.println(exceptionHandler.get());
+//        assertEquals("message upon cancel", exceptionHandler.join());
+    }
 
 }
