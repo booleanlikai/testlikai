@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.PrintWriter;
 import java.lang.reflect.Field;
 import java.util.*;
+import java.util.concurrent.*;
+import java.util.stream.Collector;
 
 public class testann {
 
@@ -197,4 +199,52 @@ public class testann {
 //        return null;
 //    }
 
+
+    @Test
+    public void ssstestfor() {
+        List<String> map = new ArrayList<>();
+        for (int i = 0; i < 9999999; i++) {
+            map.add("key" + i + "value" + i);
+        }
+        long start = System.currentTimeMillis();
+        map.parallelStream().forEach((n) -> n.toUpperCase());
+        long end = System.currentTimeMillis();
+        System.out.println("消耗时间" + (start - end));
+        long start1 = System.currentTimeMillis();
+        for (int i = 0; i < map.size(); i++) {
+            map.get(i).toUpperCase();
+        }
+        long end1 = System.currentTimeMillis();
+        System.out.println("消耗时间" + (start1 - end1));
+
+        Collector collector;
+        Map map1;
+        HashMap hashMap;
+        HashSet hashSet;
+        AbstractSet abstractSet;
+        TreeSet treeSet;
+        TreeMap treeMap;
+        Hashtable hashtable;
+        AbstractMap abstractMap;
+        AbstractList abstractList;
+
+        List list;
+        ArrayList arrayList;
+        LinkedList linkedList;
+        LinkedHashMap linkedHashMap;
+        LinkedHashSet linkedHashSet;
+        SortedMap sortedMap;
+        SortedSet sortedSet;
+        NavigableMap navigableMap;
+        NavigableSet navigableSet;
+        ConcurrentHashMap concurrentHashMap;
+        ConcurrentLinkedQueue concurrentLinkedQueue;
+        ConcurrentLinkedDeque concurrentLinkedDeque;
+        ArrayBlockingQueue arrayBlockingQueue;
+        LinkedBlockingQueue linkedBlockingQueue;
+        LinkedBlockingDeque linkedBlockingDeque;
+        LinkedTransferQueue linkedTransferQueue;
+
+
+    }
 }
