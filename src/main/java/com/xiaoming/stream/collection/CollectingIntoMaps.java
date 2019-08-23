@@ -70,6 +70,13 @@ public class CollectingIntoMaps {
     }
 
     public static void main(String args[]) {
+
+        Person person = peoples().reduce(new Person(1003, "Mary222", 21), (a, b) -> {
+            a.setAge(a.getAge() + b.getAge());
+            return a;
+        });
+        System.out.println(person);
+
         Map<Integer, Set<String>> maps24 = peoples().collect(
                 Collectors.groupingBy(
                         Person::getId,
@@ -77,7 +84,7 @@ public class CollectingIntoMaps {
                 )
         );
         System.out.println(maps24);
-        Map<Integer, Optional<Person>> maps21 = peoples().collect(Collectors.groupingBy (Person::getId, Collectors.maxBy(Comparator.comparingInt(Person::getAge))));
+        Map<Integer, Optional<Person>> maps21 = peoples().collect(Collectors.groupingBy(Person::getId, Collectors.maxBy(Comparator.comparingInt(Person::getAge))));
         System.out.println(maps21);
         Map<Integer, Optional<String>> maps22 = peoples().collect(Collectors.groupingBy(Person::getId, Collectors.mapping(Person::getName, Collectors.maxBy(Comparator.comparingInt(String::length)))));
         System.out.println(maps22);

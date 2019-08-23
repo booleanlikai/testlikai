@@ -1,9 +1,12 @@
 import com.xiaoming.test.*;
 import org.junit.Test;
+import sun.nio.ch.DirectBuffer;
 
 import java.io.FileInputStream;
 import java.io.PrintWriter;
 import java.lang.reflect.Field;
+import java.nio.ByteBuffer;
+import java.nio.IntBuffer;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.Collector;
@@ -246,5 +249,13 @@ public class testann {
         LinkedTransferQueue linkedTransferQueue;
 
 
+    }
+
+
+    @Test
+    public void testss() {
+        while (true){
+            DirectBuffer intBuffer = (DirectBuffer) ByteBuffer.allocateDirect(1000);
+        }
     }
 }
