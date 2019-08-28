@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c38be80-17e9-42d3-a265-1c77a2e62911" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/nio/NioClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/nio/NioClient1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/nio/NioServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoming/stream/collection/CollectingIntoMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/stream/collection/CollectingIntoMaps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testann.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testann.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testann$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testann$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testann.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testann.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoming/stream/PrimitiveTypeStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/stream/PrimitiveTypeStreams.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +110,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NioClient1">
+  <component name="RunManager" selected="Application.PrimitiveTypeStreams">
     <configuration name="CollectingIntoMaps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xiaoming.stream.collection.CollectingIntoMaps" />
       <module name="eas" />
@@ -169,12 +163,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testann.testss" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PrimitiveTypeStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xiaoming.stream.PrimitiveTypeStreams" />
       <module name="eas" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testann" />
-      <option name="METHOD_NAME" value="testss" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaoming.stream.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -184,15 +181,15 @@
       <item itemvalue="Application.NioServer" />
       <item itemvalue="Application.NioClient" />
       <item itemvalue="Application.NioClient1" />
-      <item itemvalue="JUnit.testann.testss" />
+      <item itemvalue="Application.PrimitiveTypeStreams" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrimitiveTypeStreams" />
         <item itemvalue="Application.NioClient1" />
         <item itemvalue="Application.NioClient" />
         <item itemvalue="Application.NioServer" />
         <item itemvalue="Application.CollectingIntoMaps" />
-        <item itemvalue="JUnit.testann.testss" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +300,10 @@
       <workItem from="1566283880682" duration="4316000" />
       <workItem from="1566291301116" duration="14302000" />
       <workItem from="1566387962833" duration="13733000" />
-      <workItem from="1566461874699" duration="1790000" />
+      <workItem from="1566461874699" duration="8006000" />
+      <workItem from="1566559399264" duration="887000" />
+      <workItem from="1566785223252" duration="6056000" />
+      <workItem from="1566893079439" duration="3225000" />
     </task>
     <task id="LOCAL-00001" summary="ssad">
       <created>1557560174461</created>
@@ -396,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566369735933</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ssads">
+      <created>1566522968317</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1566522968317</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
