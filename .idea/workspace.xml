@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c38be80-17e9-42d3-a265-1c77a2e62911" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/chat/TestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/chat/TestClient1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/chat/TestClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/chat/TestClientInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/chat/TestServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/chat/TestServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/chat/TestServerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/lbrpc/client/ClientRPCProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/lbrpc/client/ClientSocketNetty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/lbrpc/client/ClientSocketNettyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/lbrpc/entity/ClassInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/lbrpc/service/Impl/TestServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/lbrpc/service/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/lbrpc/service/netty/ServerSocketNetty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/netty/lbrpc/service/netty/ServerSocketNettyHendler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoming/stream/PrimitiveTypeStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/stream/PrimitiveTypeStreams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoming/test/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/test/EmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoming/test/EmployeeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaoming/test/EmployeeTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,14 +81,14 @@
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -85,11 +102,13 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.netty.chat" />
       <recent name="com.xiaoming.nio" />
       <recent name="file" />
       <recent name="com.xiaoming.Observer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GitHubProject\testlikai\src\main\java\com" />
       <recent name="E:\GitProject_90\testlikai\src\main\java" />
     </key>
   </component>
@@ -110,13 +129,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PrimitiveTypeStreams">
-    <configuration name="CollectingIntoMaps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xiaoming.stream.collection.CollectingIntoMaps" />
+  <component name="RunManager" selected="Application.ClientSocketNetty">
+    <configuration name="ClientSocketNetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.netty.lbrpc.client.ClientSocketNetty" />
       <module name="eas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiaoming.stream.collection.*" />
+          <option name="PATTERN" value="com.netty.lbrpc.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +143,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xiaoming.nio.NioClient" />
+    <configuration name="ServerSocketNetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.netty.lbrpc.service.netty.ServerSocketNetty" />
       <module name="eas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiaoming.nio.*" />
+          <option name="PATTERN" value="com.netty.lbrpc.service.netty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioClient1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xiaoming.nio.NioClient1" />
+    <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.netty.chat.TestClient" />
       <module name="eas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiaoming.nio.*" />
+          <option name="PATTERN" value="com.netty.chat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,12 +169,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xiaoming.nio.NioServer" />
+    <configuration name="TestClient1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.netty.chat.TestClient1" />
       <module name="eas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiaoming.nio.*" />
+          <option name="PATTERN" value="com.netty.chat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,12 +182,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimitiveTypeStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xiaoming.stream.PrimitiveTypeStreams" />
+    <configuration name="TestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.netty.chat.TestServer" />
       <module name="eas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiaoming.stream.*" />
+          <option name="PATTERN" value="com.netty.chat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,19 +196,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CollectingIntoMaps" />
-      <item itemvalue="Application.NioServer" />
-      <item itemvalue="Application.NioClient" />
-      <item itemvalue="Application.NioClient1" />
-      <item itemvalue="Application.PrimitiveTypeStreams" />
+      <item itemvalue="Application.TestClient1" />
+      <item itemvalue="Application.TestServer" />
+      <item itemvalue="Application.TestClient" />
+      <item itemvalue="Application.ServerSocketNetty" />
+      <item itemvalue="Application.ClientSocketNetty" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PrimitiveTypeStreams" />
-        <item itemvalue="Application.NioClient1" />
-        <item itemvalue="Application.NioClient" />
-        <item itemvalue="Application.NioServer" />
-        <item itemvalue="Application.CollectingIntoMaps" />
+        <item itemvalue="Application.ClientSocketNetty" />
+        <item itemvalue="Application.ServerSocketNetty" />
+        <item itemvalue="Application.TestClient" />
+        <item itemvalue="Application.TestClient1" />
+        <item itemvalue="Application.TestServer" />
       </list>
     </recent_temporary>
   </component>
@@ -304,6 +323,16 @@
       <workItem from="1566559399264" duration="887000" />
       <workItem from="1566785223252" duration="6056000" />
       <workItem from="1566893079439" duration="3225000" />
+      <workItem from="1566956287955" duration="13316000" />
+      <workItem from="1567134625961" duration="10134000" />
+      <workItem from="1567496282365" duration="768000" />
+      <workItem from="1567497068669" duration="621000" />
+      <workItem from="1567501180142" duration="644000" />
+      <workItem from="1567506845537" duration="175000" />
+      <workItem from="1567666965874" duration="118000" />
+      <workItem from="1568773403343" duration="1100000" />
+      <workItem from="1568774572597" duration="2802000" />
+      <workItem from="1568789950415" duration="417000" />
     </task>
     <task id="LOCAL-00001" summary="ssad">
       <created>1557560174461</created>
@@ -403,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566522968317</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ssads">
+      <created>1566956378223</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1566956378223</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,6 +596,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/xiaoming/nio/NioClient.java</url>
           <line>101</line>
           <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xiaoming/test/EmployeeTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="86" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
