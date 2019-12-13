@@ -1,5 +1,8 @@
 
 
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.http.exceptions.UnirestException;
 import com.xiaoming.test.*;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -212,4 +215,22 @@ public class basetest {
 //        assertEquals("message upon cancel", exceptionHandler.join());
     }
 
+
+    @Test
+    public  void test22() {
+        System.out.println("a");
+        try {
+            System.out.println(System.currentTimeMillis());
+
+            HttpResponse<String> response = Unirest.post("https://yun.tim.qq.com/v5/tlssmssvr/sendsms?sdkappid=1400283804&random=7226249334")
+                    .header("Timestamp", "1574752701")
+                    .header("cache-control", "no-cache")
+                    .header("Postman-Token", "e4a53067-2720-4acd-b1dd-2e6c1205db48")
+                    .body("{\r\n    \"ext\": \"\",\r\n    \"extend\": \"\",\r\n    \"params\": [],\r\n    \"sig\": \"39abe783fa0632bd5ed54c49825fba58fdae6da28b9444f5b1ff11ca65deb7d1\",\r\n    \"sign\": \"于淼\",\r\n    \"tel\": {\r\n        \"mobile\": \"13521495399\",\r\n        \"nationcode\": \"86\"\r\n    },\r\n    \"time\": 1574752701,\r\n    \"tpl_id\": 477038\r\n}")
+                    .asString();
+            System.out.println("ssss");
+        } catch (UnirestException e) {
+            e.printStackTrace();
+        }
+    }
 }

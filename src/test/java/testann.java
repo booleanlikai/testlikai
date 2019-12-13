@@ -142,8 +142,11 @@ public class testann {
     @Test
     public void testeeee() {
         System.out.println();
+        System.out.println(Integer.MIN_VALUE);
 
-
+        String ss="sdjfbasejakbsdfasdbfjkb看不稳接口部分就卡死按贷款你请我科达洁能两地分居阿卡丽打斯诺克未来日记哪";
+        System.out.println(ss.length());
+        System.out.println(ss.substring(0, 60));
     }
 
     @Test
@@ -254,7 +257,7 @@ public class testann {
 
     @Test
     public void testss() {
-        while (true){
+        while (true) {
             DirectBuffer intBuffer = (DirectBuffer) ByteBuffer.allocateDirect(1000);
         }
     }

@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c38be80-17e9-42d3-a265-1c77a2e62911" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apsaras_amc_core_5_0_0_RC1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apsaras_hsf_3_8_0_RC4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/Spring/testLefc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/Date/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/Date/testDateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/Thread/MyCallable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoming/stream/parallelStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/stream/parallelStreams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoming/proxy/Invocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoming/proxy/Invocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/basetest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basetest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testann.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testann.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/basetest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/basetest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testann.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testann.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,15 +82,13 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\GitProject_90\testlikai\src\main\java\com\xiaoming\test" />
-      <recent name="E:\GitProject_90\testlikai\src\main\java\com\xiaoming" />
-      <recent name="E:\GitProject_90\testlikai\src\main\java\com\xiaoming\123" />
-      <recent name="E:\GitProject\eas\src\main\resources\META-INF\services" />
-      <recent name="E:\GitProject\eas\src\main\java\com\xiaoming" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GitHubProject\testlikai\src\main\java\com\xiaoming\proxy" />
+      <recent name="E:\GitHubProject\testlikai\src\main\java\com" />
+      <recent name="E:\GitProject_90\testlikai\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.netty.chat" />
@@ -93,9 +96,12 @@
       <recent name="file" />
       <recent name="com.xiaoming.Observer" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\GitHubProject\testlikai\src\main\java\com" />
-      <recent name="E:\GitProject_90\testlikai\src\main\java" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GitProject_90\testlikai\src\main\java\com\xiaoming\test" />
+      <recent name="E:\GitProject_90\testlikai\src\main\java\com\xiaoming" />
+      <recent name="E:\GitProject_90\testlikai\src\main\java\com\xiaoming\123" />
+      <recent name="E:\GitProject\eas\src\main\resources\META-INF\services" />
+      <recent name="E:\GitProject\eas\src\main\java\com\xiaoming" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -115,20 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Invocation">
-    <configuration name="ClientSocketNetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.netty.lbrpc.client.ClientSocketNetty" />
-      <module name="eas" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.netty.lbrpc.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.testann.testeeee">
     <configuration name="Invocation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xiaoming.proxy.Invocation" />
       <module name="eas" />
@@ -142,12 +135,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerSocketNetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.netty.lbrpc.service.netty.ServerSocketNetty" />
+    <configuration name="cddas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cddas" />
+      <module name="eas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testDateUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xiaoming.Date.testDateUtil" />
       <module name="eas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.netty.lbrpc.service.netty.*" />
+          <option name="PATTERN" value="com.xiaoming.Date.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,46 +155,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.netty.chat.TestClient" />
+    <configuration name="basetest.test22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="eas" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.netty.chat.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="basetest" />
+      <option name="METHOD_NAME" value="test22" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="parallelStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xiaoming.stream.parallelStreams" />
+    <configuration name="testann.testeeee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="eas" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiaoming.stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testann" />
+      <option name="METHOD_NAME" value="testeeee" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestClient" />
-      <item itemvalue="Application.ServerSocketNetty" />
-      <item itemvalue="Application.ClientSocketNetty" />
-      <item itemvalue="Application.parallelStreams" />
       <item itemvalue="Application.Invocation" />
+      <item itemvalue="Application.testDateUtil" />
+      <item itemvalue="Application.cddas" />
+      <item itemvalue="JUnit.basetest.test22" />
+      <item itemvalue="JUnit.testann.testeeee" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.testann.testeeee" />
+        <item itemvalue="Application.testDateUtil" />
+        <item itemvalue="JUnit.basetest.test22" />
+        <item itemvalue="Application.cddas" />
         <item itemvalue="Application.Invocation" />
-        <item itemvalue="Application.parallelStreams" />
-        <item itemvalue="Application.ClientSocketNetty" />
-        <item itemvalue="Application.ServerSocketNetty" />
-        <item itemvalue="Application.TestClient" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +319,23 @@
       <workItem from="1570587431433" duration="17000" />
       <workItem from="1570590625658" duration="11000" />
       <workItem from="1571018448962" duration="2890000" />
-      <workItem from="1571732048016" duration="5585000" />
+      <workItem from="1571732048016" duration="18042000" />
+      <workItem from="1572226829179" duration="1829000" />
+      <workItem from="1572483185422" duration="1050000" />
+      <workItem from="1572923754193" duration="1249000" />
+      <workItem from="1573021689345" duration="9157000" />
+      <workItem from="1573780046663" duration="1371000" />
+      <workItem from="1574038458138" duration="1183000" />
+      <workItem from="1574146758872" duration="634000" />
+      <workItem from="1574211405105" duration="4806000" />
+      <workItem from="1574475644198" duration="461000" />
+      <workItem from="1574664615766" duration="592000" />
+      <workItem from="1574729588185" duration="4334000" />
+      <workItem from="1574821958926" duration="9458000" />
+      <workItem from="1575420866682" duration="593000" />
+      <workItem from="1575445454605" duration="5936000" />
+      <workItem from="1576113889755" duration="2149000" />
+      <workItem from="1576222346520" duration="1263000" />
     </task>
     <task id="LOCAL-00001" summary="ssad">
       <created>1557560174461</created>
@@ -439,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568790434942</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ssads">
+      <created>1571900392469</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1571900392469</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +485,7 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/basetest.java</url>
-          <line>48</line>
+          <line>51</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -559,7 +576,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/basetest.java</url>
-          <line>210</line>
+          <line>213</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -601,6 +618,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/xiaoming/test/EmployeeTest.java</url>
           <line>25</line>
           <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/basetest.java</url>
+          <line>230</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xiaoming/Date/testDateUtil.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="88" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
